@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+/envs/*.env
+/testdata/credentials.json
+
+# Playwright Test Outputs
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# MCP Browser & Temp Explorer Artifacts
+.playwright-mcp/
+.playwright-cli/
+
+# Test Run Outputs & Reports
+/reports/
+reports/
+/screenshots/
+screenshots/
+/tests/Downloads/
+tests/Downloads/
+/tests/downloads/
+tests/downloads/
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+*.tmp

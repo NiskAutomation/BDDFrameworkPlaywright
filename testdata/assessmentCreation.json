@@ -1,0 +1,29 @@
+{
+  "classSection": "8 A",
+  "classCode": "8A",
+  "section": "A",
+  "subject": "Science",
+  "timezone": "Asia/Kolkata",
+  "easyQuestions": 2,
+  "mediumQuestions": 2,
+  "titlePrefix": "BDD-HW-8A",
+  "defaultTextAnswer": "This is my response for the homework submission workflow test.",
+  "answers": [
+    {
+      "questionIncludes": "atomicity",
+      "text": "Atomicity is the number of atoms in a molecule. Oxygen O2 is diatomic because its molecule contains two oxygen atoms."
+    },
+    {
+      "questionIncludes": "Define a molecule",
+      "text": "A molecule is the smallest unit of a substance that can exist independently and retains its chemical properties."
+    },
+    {
+      "questionIncludes": "What is an ion",
+      "text": "An ion is an atom or group of atoms with a net electric charge. A simple ion has one atom, such as Na+. A polyatomic ion has multiple atoms, such as sulfate SO4 2-."
+    },
+    {
+      "questionIncludes": "monoatomic, diatomic",
+      "text": "Monoatomic particles contain one atom, such as He. Diatomic molecules have two atoms, such as O2. Polyatomic molecules have more than two atoms, such as O3 and S8."
+    }
+  ]
+}

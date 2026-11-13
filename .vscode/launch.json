@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Debug Playwright Test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/.bin/cucumber-js",
+            "args": [
+                "--tags", "@test",
+                "tests/web/features/**/*.feature",
+                "--require-module", "@cucumber/cucumber",
+                "--require", "tests/web/step-definitions/**/*.ts",
+                "--require", "tests/web/hooks/hooks.ts",
+                "--require", "tests/web/config/geneoWorld.ts",
+                "--world-parameters", "{\"timeout\": 60000}",
+                "--format", "progress"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "NODE_ENV": "test"
+            },
+            "runtimeArgs": ["-r", "ts-node/register"],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}

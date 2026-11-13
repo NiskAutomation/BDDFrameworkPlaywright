@@ -1,0 +1,32 @@
+{
+  "name": "playwright_updated_framework",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "browser:cli": "playwright cli",
+    "browser:teacher": "playwright cli -s=geneo-teacher",
+    "browser:student": "playwright cli -s=geneo-student",
+    "browser:admin": "playwright cli -s=geneo-admin",
+    "test": "cucumber-js tests/web/features/**/*.feature",
+    "test:all": "cucumber-js tests/web/features/**/*.feature",
+    "test:web": "cucumber-js tests/web/features/**/*.feature",
+    "test:teacher": "cucumber-js tests/web/features/Teacher/**/*.feature",
+    "test:student": "cucumber-js tests/web/features/Student/**/*.feature",
+    "test:admin": "cucumber-js tests/web/features/Admin/**/*.feature",
+    "test:api": "cucumber-js tests/api/features/**/*.feature",
+    "report": "node ./custom-report/generate-report.js",
+    "zip:report": "powershell -Command \"cd reports; Compress-Archive -Path 'cucumber-html-report.html', 'cucumber-report.json' -DestinationPath 'regression-test-report-$(Get-Date -Format yyyy-MM-dd).zip' -Force\"",
+    "open:report": "start reports/cucumber-html-report.html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^25.0.3",
+    "cucumber-html-reporter": "^5.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "dotenv": "^16.4.7"
+  }
+}

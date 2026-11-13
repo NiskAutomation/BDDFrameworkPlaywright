@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "lib": [
+      "ES2022"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node16",
+    "types": [
+      "node",
+      "@cucumber/cucumber",
+      "@playwright/test"
+    ],
+    "paths": {
+      "@pages/*": ["./pages/*"],
+      "@fixtures/*": ["./fixtures/*"],
+      "@utils/*": ["./utils/*"],
+      "@testdata/*": ["./testdata/*"],
+      "@api/*": ["./api/*"],
+      "@config/*": ["./tests/web/config/*"]
+    }
+  },
+  "include": [
+    "pages/**/*",
+    "fixtures/**/*",
+    "utils/**/*",
+    "api/**/*",
+    "tests/**/*",
+    "custom-report/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
